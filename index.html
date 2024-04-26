@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <!-- icon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- AOS animaction -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- index css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="logo">
+            <img src="./img/Group 20.png" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Menu</li>
+                <li>Reviews</li>
+            </ul>
+        </div>
+        <div class="nav-items">
+            <div class="nav-icons">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="signup">
+                <button>Sign Up</button>
+            </div>
+        </div>
+        <svg class="svg1" onclick="toggleNavbar()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35"
+            height="35" viewBox="0,0,256,256">
+            <g fill="#242c56" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <g transform="scale(10.66667,10.66667)">
+                    <path d="M2,5v2h20v-2zM2,11v2h20v-2zM2,17v2h20v-2z"></path>
+                </g>
+            </g>
+        </svg>
+        <svg class="svg2" onclick="toggleNavbar()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35"
+            height="35" viewBox="0 0 24 24">
+            <path
+                d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z">
+            </path>
+        </svg>
+    </header>
+    <div class="navbar-sm">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Menu</li>
+            <li>Reviews</li>
+            <button>Signup</button>
+        </ul>
+    </div>
+    <!-- hero section   -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-title">
+                    <h1>Discover the Art
+                        of Perfect Coffee.
+                    </h1>
+                </div>
+                <div class="banner-dic">
+                    <p class="text-dic text-start">Experience the difference as we meticulously select and roast the
+                        finest beans to create a truly unforgettable cup of coffee. Join us on a journey of taste and
+                        awaken your senses, one sip at a time.
+                    </p>
+                </div>
+                <div class="banner-btn">
+                    <button class="d-flex">
+                        Order Now
+                        <div class="arrow-icon"><i class="fa fa-arrow-right  " aria-hidden="true"></i></div>
+                    </button>
+                </div>
+                <div class="banner-rate ">
+                    <div class="banner-Reviews">
+                        <div class="counter_number">
+                            <span data-target="10" class="counter"></span>
+                            <span>k</span>
+                            <span class="plus">
+                                +
+                            </span>
+                        </div>
+                        <p>Reviews</p>
+                    </div>
+                    <div class="banner-Reviews ">
+                        <div class="counter_number">
+                            <span data-target="30" class="counter"></span>
+                            <span>k</span>
+                            <span class="plus">
+                                +
+                            </span>
+                        </div>
+                        <p>best Sell</p>
+                    </div>
+                    <div class="banner-Reviews">
+                        <div class="counter_number">
+                            <span data-target="150" class="counter"></span>
+                            <span>k</span>
+                            <span class="plus">
+                                +
+                            </span>
+                        </div>
+                        <p>Menu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="position">
+                    <div class="banner-text">
+                        <img src="./img/Frame 5.png" alt="">
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/Group 17.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero section END  -->
+
+    <!-- Our Services  -->
+    <div class="services"  data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
+        <div class="services-bg">
+            <img src="img/Group18.png" alt="">
+        </div>
+
+        <div class="container">
+            <div class="services-title">
+                <h1>Our Delicious SERVICES</h1>
+                <div class="services-img">
+                    <img src="/img/Frame 13.png" alt="">
+                </div>
+            </div>
+            <div class="services-dic">
+                <p>we offer a carefully curated collection that showcases the distinct characteristics of beans sourced
+                    from specific regions.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <div class="services-box">
+                        <div class="services-types">
+                            <img src="img/Frame 44.png" alt="">
+                        </div>
+                        <div class="services-text">
+                            <h3>Coffee Types</h3>
+                        </div>
+                        <div class="services-text-dic">
+                            <p>We offer a tantalizing variety of coffee types to cater to your unique preferences.</p>
+                        </div>
+
+                        <div class="services-link">
+                            <a href="#">Learn More<i class="fa fa-arrow-right  " aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <div class="services-box">
+                        <div class="services-types">
+                            <img src="img/Frame 44(1).png" alt="">
+                        </div>
+                        <div class="services-text">
+                            <h3>Different Beans</h3>
+                        </div>
+                        <div class="services-text-dic">
+                            <p> We take pride in sourcing and roasting the finest quality beans from around the world.
+                            </p>
+                        </div>
+
+                        <div class="services-link">
+                            <a href="#">Learn More<i class="fa fa-arrow-right  " aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up"
+                data-aos-duration="2000">
+                    <div class="services-box">
+                        <div class="services-types">
+                            <img src="img/Frame 44(2).png" alt="">
+                        </div>
+                        <div class="services-text">
+                            <h3>Cold Coffee</h3>
+                        </div>
+                        <div class="services-text-dic">
+                            <p> We offer a variety of cold coffee options to satisfy your cravings.</p>
+                        </div>
+
+                        <div class="services-link">
+                            <a href="#">Learn More<i class="fa fa-arrow-right  " aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coffee-bills"  data-aos="fade-up"
+    data-aos-duration="3000">
+        <img src="img/e640c8cc18d95a69da29c290acc57c7e.png" alt="">
+    </div>
+    </div>
+    <!-- services end  -->
+    <div class="coffee">
+
+    </div>
+    <!-- items coffee  -->
+
+    <div class="container " >
+        <div class="services-title" >
+            <h1>ENJOY a new blend of Coffee style</h1>
+            <div class="services-img">
+                <img src="/img/Frame 13.png" alt="">
+            </div>
+            <p class="text-center">Explore all flavours of coffee with us.
+                There is always a new cup worth experiencing</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4  col-md-6"  data-aos="fade-right">
+                <div class="items-box">
+                    <div class="items-hidden">
+                        <div class="item-cards">
+                            <img src="img/image 68.png" alt="">
+                        </div>
+                    </div>
+                    <div class=" items-dic d-flex  ">
+                        <div class="items-name">
+                            <p>Cappuccino</p>
+                        </div>
+
+                        <div class="items-price">
+                            <p>₹ 349/-</p>
+                        </div>
+                    </div>
+                    <div class="item-rel">
+                        <div class="item-btn">
+                            <button class="coffee-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6"  data-aos="fade-left">
+                <div class="items-box">
+                    <div class="items-hidden">
+
+                        <div class="item-cards">
+                            <img src="img/image 65.png" alt="">
+                        </div>
+                    </div>
+                    <div class=" items-dic d-flex  ">
+                        <div class="items-name">
+                            <p>Chai Latte</p>
+                        </div>
+
+                        <div class="items-price">
+                            <p>₹ 349/-</p>
+                        </div>
+                    </div>
+                    <div class="item-rel">
+                        <div class="item-btn">
+                            <button class="coffee-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6"  data-aos="fade-right">
+                <div class="items-box">
+                    <div class="items-hidden">
+
+                        <div class="item-cards">
+                            <img src="img/image 66(1).png" alt="">
+                        </div>
+                    </div>
+                    <div class=" items-dic d-flex  ">
+                        <div class="items-name">
+                            <p>Macchiato</p>
+                        </div>
+
+                        <div class="items-price">
+                            <p>₹ 349/-</p>
+                        </div>
+                    </div>
+                    <div class="item-rel">
+                        <div class="item-btn">
+                            <button class="coffee-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-4 col-md-6"  data-aos="fade-right">
+                <div class="items-box">
+                    <div class="items-hidden">
+
+                        <div class="item-cards">
+                            <img src="img/image 67.png" alt="">
+                        </div>
+                    </div>
+                    <div class=" items-dic d-flex  ">
+                        <div class="items-name">
+                            <p>Americano</p>
+                        </div>
+
+                        <div class="items-price">
+                            <p>₹ 349/-</p>
+                        </div>
+                    </div>
+                    <div class="item-rel">
+                        <div class="item-btn">
+                            <button class="coffee-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6"  data-aos="fade-left">
+                <div class="items-box">
+                    <div class="items-hidden">
+
+                        <div class="item-cards">
+                            <img src="img/image 63.png" alt="">
+                        </div>
+                    </div>
+                    <div class=" items-dic d-flex  ">
+                        <div class="items-name">
+                            <p>Expresso</p>
+                        </div>
+
+                        <div class="items-price">
+                            <p>₹ 349/-</p>
+                        </div>
+                    </div>
+                    <div class="item-rel">
+                        <div class="item-btn">
+                            <button class="coffee-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-right">
+                <div class="items-box">
+                    <div class="items-hidden">
+                        <div class="item-cards">
+                            <img src="img/image 64.png" alt="">
+                        </div>
+                    </div>
+                    <div class=" items-dic d-flex  ">
+                        <div class="items-name">
+                            <p>Cappuccino</p>
+                        </div>
+
+                        <div class="items-price">
+                            <p>₹ 349/-</p>
+                        </div>
+                    </div>
+                    <div class="item-rel">
+                        <div class="item-btn">
+                            <button class="coffee-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- items coffee  elg-->
+    <!-- testomonials -->
+    <div class="testomonials">
+        <div class="services-title">
+            <h1>FROM OUR CUSTOMERS</h1>
+
+            <div class="services-img">
+                <img src="/img/Frame 13.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="testomonials-img">
+                                    <img src="img/Mask group(4).png" alt="">
+                                </div>
+                                <div class="testomonials-text">
+                                    <p>I've tried coffee from various places, but Coffee Cup stands out from the rest.
+                                        The quality and consistency of their blends are unmatched. Each cup is a flavor
+                                        journey that takes my taste buds to new heights. Their commitment to sourcing
+                                        the finest beans and their meticulous roasting process truly shines through in
+                                        every sip.</p>
+                                </div>
+
+                                <div class="testomonials-img-right">
+                                    <img src="img/Mask group(5).png" alt="">
+                                </div>
+
+                                <div class="testomonials-user">
+                                    <h5>- Samantha R</h5>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="testimonial-img">
+                                    <img src="img/Group 3.png" alt="Los Angeles">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" >
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="testomonials-img">
+                                    <img src="img/Mask group(4).png" alt="">
+                                </div>
+                                <div class="testomonials-text">
+                                    <p>I've tried coffee from various places, but Coffee Cup stands out from the rest.
+                                        The quality and consistency of their blends are unmatched. Each cup is a flavor
+                                        journey that takes my taste buds to new heights. Their commitment to sourcing
+                                        the finest beans and their meticulous roasting process truly shines through in
+                                        every sip.</p>
+                                    <div class="testomonials-img-right">
+                                        <img src="img/Mask group(5).png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="testomonials-user">
+                                    <h5>- Samantha R</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="testimonial-img">
+                                    <img src="img/Group 3.png" alt="Los Angeles">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div class="testomonials-img">
+                                    <img src="img/Mask group(4).png" alt="">
+                                </div>
+                                <div class="testomonials-text">
+                                    <p>I've tried coffee from various places, but Coffee Cup stands out from the rest.
+                                        The quality and consistency of their blends are unmatched. Each cup is a flavor
+                                        journey that takes my taste buds to new heights. Their commitment to sourcing
+                                        the finest beans and their meticulous roasting process truly shines through in
+                                        every sip.</p>
+                                    <div class="testomonials-img-right">
+                                        <img src="img/Mask group(5).png" alt="">
+                                    </div>
+                                </div>
+                                <div class="testomonials-user">
+                                    <h5 class="pl-4">- Samantha R</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="testimonial-img">
+                                    <img src="img/Group 3.png" alt="Los Angeles">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+
+                <i class="fa fa-angle-left testimonial-icon" aria-hidden="true"></i>
+
+
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <i class="fa fa-angle-right testimonial-icon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <!-- testomonials end  -->
+    <!-- Social media  -->
+    <div class="social-media" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom"  >
+        <div class="social-media-img">
+            <div class="media-section">
+                <div class="media-img">
+                    <img src="/img/Frame 1.png" alt="">
+                </div>
+                <div class="media-text text-center">
+                    <p class="text-light">Sip, Savor, and Be Captivated by Coffee Cup Mastery.</p>
+                </div>
+                <div class="media-icon">
+                    <div class="social-media-icon">
+                        <img src="/img/Group 11.png" alt="">
+                    </div>
+                    <div class="social-media-icon">
+                        <img src="/img/Group 12.png" alt="">
+                    </div>
+                    <div class="social-media-icon">
+                        <img src="/img/Group 13.png" alt="">
+                    </div>
+                    <div class="social-media-icon">
+                        <img src="/img/Group 14.png" alt="">
+                    </div>
+                    <div class="social-media-icon">
+                        <img src="/img/Group 15.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Social media  end-->
+    <!-- footer start  -->
+    <footer>
+        <div class="footer-color" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="text-light pt-5">
+                            <h5> About Company</h5>
+                            <p class="pt-4">Sint metus, integer, sociis, aenean
+                                aenean nibh biben.</p>
+                        </div>
+                        <div class="footer-icon">
+                            <div class="footer-text ">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>3rd Street. LA</p>
+                            </div>
+                        </div>
+                        <div class="footer-icon">
+                            <div class="footer-text ">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <p>363576586798009</p>
+                            </div>
+                        </div>
+                        <div class="footer-icon">
+                            <div class="footer-text ">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <p>info@javajolt.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-5 col-sm-4" >
+                        <div class="footer-link">
+                            <h5 class="text-light">Useful Links</h5>
+                            <ul class="pt-4">
+                                <li class="pt-2">Home</li>
+                                <li class="pt-2">About</li>
+                                <li class="pt-2">Service</li>
+                                <li class="pt-2"> Contect</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-4 pt-5">
+                        <div class="footer-time">
+                            <h5 class="text-light">Opening Hours</h5>
+                            <p class="text-light pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tem</p>
+                            <h6 class="text-light pt-4">Monday - Friday:-<span class="text-light">09:00 AM - 08:00
+                                    PM</span></h6>
+                            <h6 class="text-light pt-3">Saturday - Sunday:-<span class="text-light"> 12:00 PM - 02:00
+                                    PM</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-copy"></div>
+                <div class="row pt-2">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>© Copyright Coffee Cup. All right reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="copyright-text">
+                            <p>Privacy Policy</p>
+                            <p>Support</p>
+                            <p> Terms & Condition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer start  end-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
