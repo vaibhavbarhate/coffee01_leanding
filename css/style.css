@@ -320,7 +320,6 @@ svg,
 .item-cards {
     border-radius: 20px 20px 0px 0px;
     transition: 0.3s;
-    overflow: hidden; 
 height: 360px;
 transition:2s;
 
